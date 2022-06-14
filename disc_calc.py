@@ -1,4 +1,4 @@
-# Discount calculator
+# Program to calculate the discount of items
 
 print("Welcome to discount calculator")
 try:
