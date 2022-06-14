@@ -45,13 +45,13 @@ def c_pswd (pswd):
 
 
 
-# Client credential input
+
 f_name = input("First name: ")
 l_name = input("Last name:")
 m_name = input("Middle Name:")
+
 email = input("Your Email:")
 
 password = input("Input a password:")
 
-#Calling of function
 c_pswd(password)
