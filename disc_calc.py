@@ -7,7 +7,6 @@ except ValueError:
     print("Input a float value")
 
 i = 1
-# loop to calculate various discounts
 while i <= item_types:
     item_name = input("Name of item " + str(i) +":")
     try:
@@ -16,7 +15,6 @@ while i <= item_types:
         discount = float(input("Input the discount of one " + item_name + " :"))
     except ValueError:
         print = ("Input a float value")
-    # Discount price calculation    
     final_price = item_price * no_item * (100 - discount) / 100
     print("Discount price of " + str(no_item)+ " " + item_name + " is "+ str(final_price))
     i += 1
