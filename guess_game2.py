@@ -3,9 +3,11 @@ import requests
 from api_edit import *
 
 i = 1
+
 print("Definition of the word:")
 print(define)
-guess = input("Input a word with the definition above:")
+print("The length of the word is: " + str(len(word)))
+guess = input("Input the word defined above:")
 no_guess = False
 while guess.lower() != word.lower() and not(no_guess):
     if i < 3:

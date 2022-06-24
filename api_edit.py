@@ -1,7 +1,7 @@
 import requests
 import json
 
-#Api to get a word
+#Api to get a random word
 q = requests.get('https://random-word-api.herokuapp.com/word')
 word = q.json()[0]
 
@@ -9,8 +9,9 @@ word = q.json()[0]
 response = requests.get('https://api.dictionaryapi.dev/api/v2/entries/en/' + word)
 
 #Extracting the definition of the word from the dictionary API
-a = response.json()[0]
-b = a["meanings"][0]
-c = b["definitions"]
-d = c[0]
-define = d["definition"]
+#a = response.json()[0]
+#b = a["meanings"][0]
+#c = b["definitions"]
+#d = c[0]
+#define = d["definition"]
+define = response.json()[0]["meanings"][0]["definitions"][0]["definition"]
